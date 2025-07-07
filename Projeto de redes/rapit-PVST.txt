@@ -1,0 +1,15 @@
+!Configuraçao do Switch Layer 3 3650
+enable
+    configure terminal
+        !Configuração de primario
+        spanning-tree vlan 1 root primary 
+        !habilitar o suporte  ao Rapid-PVST
+        spanning-tree mode rapid-pvst 
+        end
+write 
+---------------------------------------------------------
+enable
+    configure terminal
+    !habilitar o suporte  ao Rapid-PVST
+        spanning-tree mode rapid-pvst 
+        end
